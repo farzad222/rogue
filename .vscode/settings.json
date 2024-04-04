@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "gameglobal.h": "c",
+        "stdlib.h": "c",
+        "limits": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
