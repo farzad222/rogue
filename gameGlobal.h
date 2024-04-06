@@ -7,8 +7,6 @@ typedef struct Player{
     int yPos;
     int health;
 }Player;
-Player *playerSetUp();
-
 
 typedef struct Cordinates // coordinates of the doors and edges in a room
 {
@@ -30,13 +28,13 @@ typedef struct node_tag // a linked list to keep track of room and their door lo
     TRoom room;
     struct node_tag *next;
 }   node;
+
+Player *playerSetUp();
 node *roomSetUp(TRoom room);
-
-
 unsigned hash(unsigned a);
 int idx(int x, int y);
 void mapStart();
-void roomGenerate(node *roomSetUp, node **head);
+void roomGenerate(node **head);
 
 
 
